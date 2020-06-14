@@ -1,0 +1,30 @@
+<html>  
+<head>  
+	<script src="jquery.min.js"></script>  
+	<script>  
+		$(document).ready(function(){
+			var div = $("div");  
+			function mulaiAnim(){
+				div.animate({left: '310px', opacity: '0.5'}, "slow");         
+				div.animate({top: '400px', opacity: '0.9'}, "slow");         
+				div.animate({left: '10px', opacity: '0.5'}, "slow");         
+				div.animate({top: '100px', opacity: '0.9'}, "slow");         
+				mulaiAnim();
+			}
+			function berhenti(){
+				var div = $("div");         
+				div.stop(true,true);         
+				div.css({"background":"black",
+					"height":"100px",
+					"left":"10px",
+					"width":"100px",
+					"top":"100px",
+					"position":"absolute",
+					"opacity":"1"});
+			}    
+			$(".start").click(function(){ mulaiAnim(); });
+			$(".stop").click(function(){ berhenti(); });
+		});
+	</script>
+</head>  
+<body>

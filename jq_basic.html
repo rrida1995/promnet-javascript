@@ -1,0 +1,20 @@
+<html>
+<head><title>jQuery</title></head>
+<body>
+	<!-- mengambil script jquery -->
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			//mengubah isi dari div dengan class test­1
+			$(".test­1").html("<b>Hello World</b>");
+			//mengubah isi dari tag p
+			$("p").text("Would you like some coffee?");
+			//mengubah isi dari input dengan id test­2
+			$("#test­2").val("Yes, please!");
+		});
+	</script>
+	<div class="test­1"></div>
+	<p></p>
+	<input type="text" id="test­2">
+</body>
+</html> 

@@ -1,0 +1,53 @@
+<html>
+<head><title>Javascript - Conditional Statements</title></head>
+<body>
+	<script type="text/javascript">
+
+		//IF..ELSE Statement
+		var ipk = 3.6;
+		var predikat = "";
+		if(ipk >= 3.51 && ipk <= 4.0){
+			predikat += "Excellent";
+		}
+		else if(ipk >= 2.76 && ipk <= 3.50){
+			predikat += "Very Good";
+		}
+		else{
+			predikat += "Good";
+		}
+
+		document.write("IPK: " + ipk + " Predikat: " + predikat);
+
+		document.write("<br/>");
+
+		//SWITCH Statement
+		var hari;
+		switch(new Date().getDay()){
+			case 0:
+				hari = "Minggu";
+				break;
+			case 1:
+				hari = "Senin";
+				break;
+			case 2:
+				hari = "Selasa";
+				break;
+			case 3:
+				hari = "Rabu";
+				break;
+			case 4:
+				hari = "Kamis";
+				break;
+			case 5:
+				hari = "Jumat";
+				break;
+			case 6:
+				hari = "Sabtu";
+				break;
+
+		}
+
+		document.write("Hari ini adalah hari " + hari + "<br/>");
+	</script>
+</body>
+</html>

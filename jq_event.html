@@ -1,0 +1,26 @@
+<html>
+<head><title>jQuery</title></head>
+<body>  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+	<script>  
+		$( document ).ready(function() { 
+			$("#event­1").hover(function(){    
+				$(this).text("Hello")
+			});      
+			$("#event­2").mousedown(function(){    
+				$(this).text("Woud you like")
+			});      
+			$("#event­3").mouseup(function(){    
+				$(this).text("some coffee?")
+			});   
+	  		$("#event­4").click(function(){    
+				alert("Yes, Please");
+			});    
+		}); 
+	</script>    
+	<p id="event­1">Hover</p>  
+	<p id="event­2">Mouse Down</p>  
+	<p id="event­3">Mouse Up</p>  
+	<button id="event­4">Click</button>    
+</body>  
+</html>
